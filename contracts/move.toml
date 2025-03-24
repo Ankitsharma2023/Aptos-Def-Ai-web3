@@ -1,0 +1,11 @@
+[package]
+name = "AptosDeFAI"
+version = "1.0.0"
+authors = ["Your Name"]
+edition = "2024"
+
+[dependencies]
+AptosFramework = { local = "../../../aptos-core/framework" }
+
+[addresses]
+aptos_defai = "0x1"
