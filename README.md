@@ -1,9 +1,6 @@
 # AptosDeFAI
 Move AI Hackathon
 
-
-# AptosDeFAI
-
 ## Overview
 AptosDeFAI is an **AI-powered autonomous DeFi management platform** built on the **Aptos blockchain**. It leverages AI agents to optimize yield farming, portfolio rebalancing, and risk-adjusted asset allocation across multiple DeFi protocols. This enables users to manage their digital assets effortlessly without constant manual intervention.
 
