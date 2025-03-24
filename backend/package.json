@@ -1,1 +1,28 @@
+{
+  "name": "AptosDeFAI-backend",
+  "version": "1.0.0",
+  "description": "Backend for AptosDeFAI - AI-powered DeFi automation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.2.1",
+    "dotenv": "^16.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "axios": "^1.4.0",
+    "aptos": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0",
+    "jest": "^29.6.2",
+    "supertest": "^6.3.3"
+  }
+}
 
