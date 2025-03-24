@@ -1,19 +1,13 @@
-module aptos_defai::portfolio {
+module aptos_defai::liquidity {
     use aptos_framework::signer;
 
-    struct Portfolio has key {
+    struct LiquidityPool has key {
         owner: address,
-        assets: vector<u64>,
+        total_liquidity: u64,
     }
 
-    public entry fun create_portfolio(account: &signer) {
-        let owner = signer::address_of(account);
-        move_to(account, Portfolio { owner, assets: vector[] });
-    }
-
-    public entry fun add_asset(account: &signer, asset: u64) {
-        let portfolio = borrow_global_mut<Portfolio>(signer::address_of(account));
-        portfolio.assets.push(asset);
+    public entry fun provide_liquidity(account: &signer, amount: u64) {
+        let pool = borrow_global_mut<LiquidityPool>(signer::address_of(account));
+        pool.total_liquidity = pool.total_liquidity + amount;
     }
 }
-
