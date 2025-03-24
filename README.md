@@ -1,0 +1,2 @@
+# AptosDeFAI
+Move AI Hackathon
